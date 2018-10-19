@@ -1,0 +1,32 @@
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.mapper.action.prefix.enabled"
+		value="true" />
+	<package name="com.strutshospital.action"
+		extends="struts-default">
+		<action name="alta" class="com.strutshospital.PacienteAction"
+			method="alta">
+			<result>/index.jsp</result>
+		</action>
+		<action name="consulta" class="com.strutshospital.PacienteAction"
+			method="consulta">
+			<result>/consulta.jsp</result>
+		</action>
+		<action name="consultarPaciente"
+			class="com.strutshospital.PacienteAction" method="muestraPaciente">
+			<result>/modifica.jsp</result>
+		</action>
+		<action name="modificar" class="com.strutshospital.PacienteAction"
+			method="modificar">
+			<result>/index.jsp</result>
+		</action>
+		<action name="eliminar" class="com.strutshospital.PacienteAction"
+			method="eliminar">
+			<result>/index.jsp</result>
+		</action>
+
+
+	</package>
+</struts>
