@@ -1,0 +1,20 @@
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<constant name="struts.mapper.action.prefix.enabled" value="true"/>
+	<package name="com.strutslibreria" extends="struts-default">
+		<action name="alta" class="com.strutslibreria.LibroAction" method="alta">
+			<result>/index.html</result>
+		</action>
+		<action name="consulta" class="com.strutslibreria.LibroAction" method="consulta">
+			<result>/consulta.jsp</result>
+		</action>
+		<action name="modificar" class="com.strutslibrearia.LibroAction" method="modificar">
+			<result>/consulta.jsp</result>		
+		</action>
+		<action name="eliminar" class="com.strutslibrearia.LibroAction" method="eliminar">
+			<result>/consulta.jsp</result>		
+		</action>
+	</package>
+</struts>
